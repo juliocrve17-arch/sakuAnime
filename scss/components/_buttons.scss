@@ -1,0 +1,5 @@
+.btn{ @extend %btn; @extend %focus; }
+.btn--primary{ background: linear-gradient(90deg, $brand, $brand-2); color:white; border-color:transparent; &:hover{ transform: translateY(-1px); box-shadow: $shadow; } }
+.btn--ghost{ background: transparent; color:$text; &:hover{ background: rgba(255,255,255,.06); } }
+.btn--accent{ background: $accent; color:#0b0b15; border-color: transparent; &:hover{ transform: translateY(-1px); } }
+.btn-group{ display:flex; gap:.6rem; flex-wrap:wrap; }

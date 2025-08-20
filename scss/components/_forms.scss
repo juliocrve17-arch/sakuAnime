@@ -1,0 +1,5 @@
+.form{ display:grid; gap:1rem; max-width:720px; margin-inline:auto;
+  &__row{ display:grid; gap:.4rem;
+    input, textarea{ background:$surface; color:$text; border:1px solid $border; border-radius:$radius; padding:.8rem 1rem; @extend %focus; }
+  }
+}

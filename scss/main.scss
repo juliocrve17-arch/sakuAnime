@@ -1,0 +1,36 @@
+// Vendors
+@import 'vendors/normalize';
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+// Base
+@import 'base/reset';
+@import 'base/typography';
+// Layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+// Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+// Themes
+@import 'themes/light';
+
+// Utilities generadas con @each
+$spaces: (0, .25rem, .5rem, .75rem, 1rem, 1.25rem, 1.5rem, 2rem);
+@each $s in $spaces {
+  .m-#{$s * 100} { margin:$s; }
+  .p-#{$s * 100} { padding:$s; }
+}
+
+// Animación sutil
+@keyframes float { from{ transform: translateY(0);} 50%{ transform: translateY(-4px);} to{ transform: translateY(0);} }
+.hover-float:hover{ animation: float 1.2s ease-in-out infinite; }
+
+@import "pages/top10";

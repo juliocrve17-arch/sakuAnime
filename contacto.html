@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SakuAnime — Portal de animes populares con noticias y tops." />
+  <link rel="preload" as="image" href="assets/img/hero.jpg">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>SakuAnime</title>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a class="logo" href="index.html" aria-label="SakuAnime Inicio">Saku<span>Anime</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+    <nav class="site-nav" role="navigation">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="index.html">Inicio</a></li>
+        <li><a class="site-nav__link" href="animes.html">Animes Populares</a></li>
+        <li><a class="site-nav__link" href="noticias.html">Noticias</a></li>
+        <li><a class="site-nav__link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container content">
+  <header class="page-header">
+    <h1 class="h1">Contacto</h1>
+    <p>¡Hablemos! Te respondemos a la brevedad.</p>
+  </header>
+  <form class="form" action="#" method="post">
+    <div class="form__row">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+    </div>
+    <div class="form__row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+    </div>
+    <div class="form__row">
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="6" placeholder="¿En qué te ayudamos?"></textarea>
+    </div>
+    <button class="btn btn--primary" type="submit">Enviar</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <section>
+      <h3>SakuAnime</h3>
+      <p>Tu portal de animes populares — estrenos, tops y noticias.</p>
+    </section>
+    <section>
+      <h4>Secciones</h4>
+      <ul class="list-unstyled">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="animes.html">Animes Populares</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Contacto</h4>
+      <ul class="list-unstyled">
+        <li><a href="mailto:hola@sakuanime.co">hola@sakuanime.co</a></li>
+        <li><a href="tel:+5491112345678">+54 9 11 1234-5678</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer__copy">© 2025 SakuAnime — Todos los derechos reservados</div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

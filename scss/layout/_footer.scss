@@ -1,0 +1,5 @@
+.site-footer{
+  margin-top:3rem; border-top:1px solid $border; background:$surface;
+  .footer__grid{ @include container(); display:grid; gap:1rem; padding-block:2rem; @include mq($bp-md){ grid-template-columns:2fr 1fr 1fr; } }
+  .footer__copy{ text-align:center; padding:.8rem; border-top:1px solid $border; color:$muted; }
+}

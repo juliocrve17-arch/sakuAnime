@@ -1,0 +1,7 @@
+body{ font-family:$font; background:$bg; color:$text; line-height:1.65; }
+.h1{ font-size: fluid(30, 44); font-weight: 900; }
+.h2{ font-size: fluid(26, 34); font-weight: 800; }
+.h3{ font-size: fluid(20, 26); font-weight: 800; }
+.lead{ font-size: fluid(18, 20); color:$muted; }
+a{ color: $brand; text-underline-offset: .18em; &:hover{ text-decoration:none; } }
+.muted{ color:$muted; }
